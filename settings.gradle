@@ -1,0 +1,3 @@
+include ':tajweedparser'
+include ':app'
+rootProject.name = "TajweedParser"
