@@ -2,7 +2,11 @@
 
 # TajweedParser
 Tajweed Quran Parser bassed on 
-[android app link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing), 
+[android app link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
+
+<p align="center">
+<img src="https://github.com/vipafattal/TajweedParser/blob/master/test.png" width=35% >
+</p>
 
 # Setup
 
