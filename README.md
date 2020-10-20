@@ -73,21 +73,21 @@ It uses the table below to parse what the API returns and converts it to somethi
                     <tr>
                 <td class="ham_wasl">hamza-wasl</td>
                 <td>[h</td>
-                <td style="background-color: #AAAAAA">#AAAAAA</td>
+                <td style="background-color: #000000">#AAAAAA</td>
                 <td>hsl</td>
                 <td>Hamzat ul Wasl</td>
             </tr>
                     <tr>
                 <td class="slnt">silent</td>
                 <td>[s</td>
-                <td style="background-color: #AAAAAA">#AAAAAA</td>
+                <td style="background-color: #000000">#AAAAAA</td>
                 <td>hsl</td>
                 <td>Silent</td>
             </tr>
                     <tr>
                 <td class="slnt">laam-shamsiyah</td>
                 <td>[l</td>
-                <td style="background-color: #AAAAAA">#AAAAAA</td>
+                <td style="background-color: #000000">#AAAAAA</td>
                 <td>hsl</td>
                 <td>Lam Shamsiyyah</td>
             </tr>
