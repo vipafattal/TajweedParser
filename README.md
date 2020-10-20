@@ -188,8 +188,8 @@ It uses the table below to parse what the API returns and converts it to somethi
             </tbody>
 </table>
 
-for more information go to https://github.com/islamic-network/alquran-tools/blob/master/docs/tajweed.md 
+for more information go to see the docs at [link1](https://github.com/islamic-network/alquran-tools/blob/master/docs/tajweed.md) and [link2](https://alquran.cloud/tajweed-guide).
 
 # Credits
 
-Big thanks for [Meezaan](https://github.com/meezaan) for help and the useful API
+Big thanks for [Meezaan](https://github.com/meezaan) for help and the useful API.
