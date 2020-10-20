@@ -21,27 +21,26 @@ object TajweedHelper {
     }
 
     private fun getAyahSplits(rawAyah: String): List<String> {
-        val ayah = rawAyah.replace("[0-9:\\[\\]]".toRegex(), "")
-        val splits = ayah.splitWithDelimiter("(?<=[$tajweedMetas])|(?=[$tajweedMetas])")
+        val ayah = rawAyah.replace("[\\[0-9:]".toRegex(), "")
+        val splits = ayah.splitWithDelimiter("(?<=[\\]\\[$tajweedMetas])|(?=[\\]\\[$tajweedMetas])")
         return splits
     }
 
     private fun applyTajweedColors(splits: List<String>): Spannable {
 
         val spannableAya = SpannableStringBuilder("")
-        var previousSpilt = ""
+        var metaSpilt = ""
 
         for (ayahSpilt in splits) {
             when {
-                tajweedMetas.contains(ayahSpilt) -> previousSpilt = ayahSpilt
-                previousSpilt.isNotEmpty() -> {
+                tajweedMetas.contains(ayahSpilt) -> metaSpilt = ayahSpilt
+                metaSpilt.isNotEmpty() -> {
                     //apply span color $metaToColor(ayahSpilt.toChar())
-                    val metaColor = metaToColor(previousSpilt[0])
-
+                    val metaColor = metaToColor(metaSpilt[0])
                     spannableAya.setSpanOnAya(ayahSpilt, metaColor)
-
-                    previousSpilt = ""
+                    metaSpilt = ""
                 }
+                ayahSpilt == "]" -> continue
                 else -> spannableAya.setSpanOnAya(ayahSpilt, "#000000")
             }
         }

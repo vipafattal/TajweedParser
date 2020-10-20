@@ -27,6 +27,6 @@ class MainActivity : AppCompatActivity() {
         TajweedHelper.setTajweedMetasColor(customMetaColors)
 
         //Binding Surah number 1 which is Al-Baqraa, to vertical RecyclerView.
-        recyclerView.adapter = RecyclerViewAdapter(data.data.surahs[1].ayahs)
+        recyclerView.adapter = RecyclerViewAdapter(data.data.surahs[23].ayahs)
     }
 }
