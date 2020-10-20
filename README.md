@@ -1,12 +1,7 @@
 [![](https://jitpack.io/v/vipafattal/TajweedParser.svg)](https://jitpack.io/#vipafattal/TajweedParser)
 
 # TajweedParser
-Tajweed Quran Parser bassed on 
-[android app link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
-
-<p align="center">
-<img src="https://github.com/vipafattal/TajweedParser/blob/master/test.png" width=35% >
-</p>
+Tajweed Quran Parser bassed on [quran-tajweed](http://api.alquran.cloud/v1/quran/quran-tajweed)
 
 # Setup
 
@@ -48,8 +43,14 @@ then use `setTajweedMetasColor(MetaColors)` to force library to use your custom 
 TajweedHelper.setTajweedMetasColor(customMetaColors)
 ```
 
-# Full Example see [app](https://github.com/vipafattal/TajweedParser/tree/master/app/src/main)
+# Full Example
+See the [app](https://github.com/vipafattal/TajweedParser/blob/master/test.png) module for full example.
 
+You can also download the apk from this link [link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
+
+<p align="center">
+<img src="https://github.com/vipafattal/TajweedParser/blob/master/test.png" width=35% >
+</p>
 
 # Styles
 This table of the Tajweed metas of the `quran-tajweed` (obtained from [link](https://github.com/vipafattal/alquran-tools/blob/master/docs/tajweed.md)):
