@@ -7,7 +7,7 @@ Tajweed Quran Parser bassed on
 # Setup
 
 #### Step 1
-add in your root build.gradle at the end of repositories
+add to your project build.gradle at the end of repositories
 ```groovy
 allprojects {
 		repositories {
@@ -17,16 +17,42 @@ allprojects {
 	}
 ```
 #### Step 2
-add the dependency to the app module
+add the dependency to the `build.gradle` app module:
 ```groovy
 implementation 'com.github.vipafattal:TajweedParser:0.9'
 ```
 
 #### Usage
 
-The library is based on https://alquran.cloud/api, on edition `quran-tajweed`.
+The library is based on https://alquran.cloud/api, on edition `quran-tajweed`.Once you have `quran-tajweed` inside the app you can call `TajweedHelper.getStyledAyah(Aya.text)` to return a [Spannable](https://developer.android.com/reference/android/text/Spannable) text. Use TextView widgets with Spannable text.
 
+```kotlin
+val ayaTextView: TextView = findViewById(R.id.ayahText)
+ayaTextView.text = TajweedHelper.getStyledAyah(aya.text)
+```
+
+You can also change the colors by creating subclass of `MetaColors` and overriding the color properties:
+```Kotlin
+ val customMetaColors = object : MetaColors() {
+       override val hsl: String = "#FF6200EE"
+       override val ikhafa: String = "#D50000"
+}
+```
+then use `setTajweedMetasColor(MetaColors)` to force library to use your custom colors.
+
+```Kotlin
+TajweedHelper.setTajweedMetasColor(customMetaColors)
+```
+
+# Full Example see [app](https://github.com/vipafattal/TajweedParser/tree/master/app/src/main)
+
+
+# Styles
 This table of the Tajweed metas of the `quran-tajweed` (obtained from [link](https://github.com/vipafattal/alquran-tools/blob/master/docs/tajweed.md)):
+
+# The  Library Functionality 
+This library takes the output of the Tajweed edition, and creates a Spannalbe Android Widget friendly text.
+It uses the table below to parse what the API returns and converts it to something you can use with TextViews widgets.
 
 <table>
     <thead>
@@ -161,3 +187,9 @@ This table of the Tajweed metas of the `quran-tajweed` (obtained from [link](htt
             </tr>
             </tbody>
 </table>
+
+for more information go to https://github.com/islamic-network/alquran-tools/blob/master/docs/tajweed.md 
+
+# Cridets
+
+Big thanks for [Meezaan](https://github.com/meezaan) for help and the useful API
