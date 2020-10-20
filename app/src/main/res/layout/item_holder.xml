@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:textSize="18sp"
+        android:textSize="21sp"
         android:fontFamily="@font/kitab_bold"
         android:id="@+id/ayahText"
         android:layout_width="match_parent"
