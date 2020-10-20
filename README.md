@@ -46,7 +46,7 @@ TajweedHelper.setTajweedMetasColor(customMetaColors)
 # Full Example
 See the [app](https://github.com/vipafattal/TajweedParser/blob/master/test.png) module for full example.
 
-You can also download the apk from this link [link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
+You can also download the apk from this [link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
 
 <p align="center">
 <img src="https://github.com/vipafattal/TajweedParser/blob/master/test.png" width=35% >
