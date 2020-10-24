@@ -41,7 +41,7 @@ object TajweedHelper {
                     metaSpilt = ""
                 }
                 ayahSpilt == "]" -> continue
-                else -> spannableAya.setSpanOnAya(ayahSpilt, "#000000")
+                else -> spannableAya.setSpanOnAya(ayahSpilt, tajweedMetaColors.defaultColor)
             }
         }
 
