@@ -30,12 +30,10 @@ val ayaTextView: TextView = findViewById(R.id.ayahText)
 ayaTextView.text = TajweedHelper.getStyledAyah(aya.text)
 ```
 
-You can also change the colors by creating subclass of `MetaColors` and overriding the color properties:
+You can also change the colors by creating a class of `MetaColors` and overriding the color properties:
 ```Kotlin
- val customMetaColors = object : MetaColors() {
-       override val hsl: String = "#FF6200EE"
-       override val ikhafa: String = "#D50000"
-}
+val metaColors = MetaColors(hsl = "#FF6200EE", ikhafa = "#D50000")
+TajweedHelper.setTajweedMetasColor(metaColors)
 ```
 then use `setTajweedMetasColor(MetaColors)` to force library to use your custom colors.
 
