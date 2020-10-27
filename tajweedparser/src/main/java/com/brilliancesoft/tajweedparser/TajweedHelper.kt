@@ -67,7 +67,8 @@ object TajweedHelper {
                     'i' -> iqlab
                     'a' -> idgham_with_ghunnah
                     'u' -> idgham_without_ghunnah
-                    'd', 'b' -> idgham_mutajanisayn
+                    'd'-> idgham_mutajanisayn
+                    'b' -> idgham_mutaqaribayn
                     'g' -> ghunnah
                     else -> throw IllegalArgumentException("Unknown meta char: $meta")
                 }

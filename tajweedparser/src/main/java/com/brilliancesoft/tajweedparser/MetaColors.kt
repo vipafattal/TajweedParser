@@ -40,8 +40,10 @@ data class MetaColors(
     //Idgham - Without Ghunnah
     val idgham_without_ghunnah: String = "#169200",
 
-    //Idgham - Mutajanisayn, Idgham - Mutaqaribayn
+    //Idgham - Mutajanisayn
     val idgham_mutajanisayn: String = "#A1A1A1",
+    //Idgham - Mutaqaribayn
+    val idgham_mutaqaribayn: String = "#A1A1A1",
 
     //Ghunnah: 2 Vowels
     val ghunnah: String = "#FF7E1E",
@@ -63,6 +65,7 @@ data class MetaColors(
             idgham_with_ghunnah = defaultColor,
             idgham_without_ghunnah = defaultColor,
             idgham_mutajanisayn = defaultColor,
+            idgham_mutaqaribayn = defaultColor,
             ghunnah = defaultColor
         )
 
@@ -106,6 +109,13 @@ data class MetaColors(
 
         fun MetaColors.qalaqah(
             qalaqah: String = "#DD0008"
+        ) = copy(
+            qalaqah = qalaqah
+        )
+
+        fun MetaColors.idgham(
+            idgham_mutajanisayn: String = "#A1A1A1",
+            idgham_mutaqaribayn: String = "#A1A1A1"
         ) = copy(
             qalaqah = qalaqah
         )
