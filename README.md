@@ -18,7 +18,7 @@ allprojects {
 #### Step 2
 add the dependency to the `build.gradle` app module:
 ```groovy
-implementation 'com.github.vipafattal:TajweedParser:1.0'
+implementation 'com.github.vipafattal:TajweedParser:1.0.0.1'
 ```
 
 #### Usage
