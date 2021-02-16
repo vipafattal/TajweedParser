@@ -1,7 +1,7 @@
 [![](https://jitpack.io/v/vipafattal/TajweedParser.svg)](https://jitpack.io/#vipafattal/TajweedParser)
 
 # TajweedParser
-Tajweed Quran Parser bassed on [quran-tajweed](http://api.alquran.cloud/v1/quran/quran-tajweed)
+Tajweed Quran Parser for Android bassed on [quran-tajweed](http://api.alquran.cloud/v1/quran/quran-tajweed)
 
 # Setup
 
