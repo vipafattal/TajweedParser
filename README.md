@@ -3,7 +3,10 @@
 # TajweedParser
 Tajweed Quran Parser for Android bassed on [quran-tajweed](http://api.alquran.cloud/v1/quran/quran-tajweed)
 
-# Setup
+# Deprecated
+This library deprecated is in favor of [QuranX](https://github.com/vipafattal/QuranX), and no longer maintained please see [TajweedProcessor](https://github.com/vipafattal/QuranX/tree/master/tajweedprocessor) of QuranX.
+
+## Setup
 
 #### Step 1
 add to your project build.gradle at the end of repositories
@@ -41,7 +44,7 @@ then use `setTajweedMetasColor(MetaColors)` to force library to use your custom 
 TajweedHelper.setTajweedMetasColor(customMetaColors)
 ```
 
-# Full Example
+## Full Example
 See the [app](https://github.com/vipafattal/TajweedParser/blob/master/test.png) module for full example.
 
 You can also download the apk from this [link](https://drive.google.com/file/d/10EbERrszIuVqBfxIQkm5whGXcHjibpG5/view?usp=sharing).
@@ -50,10 +53,10 @@ You can also download the apk from this [link](https://drive.google.com/file/d/1
 <img src="https://github.com/vipafattal/TajweedParser/blob/master/test.png" width=35% >
 </p>
 
-# Styles
+## Styles
 This table of the Tajweed metas of the `quran-tajweed` (obtained from [link](https://github.com/vipafattal/alquran-tools/blob/master/docs/tajweed.md)):
 
-# The  Library Functionality 
+## The  Library Functionality 
 This library takes the output of the Tajweed edition, and creates a Spannalbe Android Widget friendly text.
 It uses the table below to parse what the API returns and converts it to something you can use with TextViews widgets.
 
