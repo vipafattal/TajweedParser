@@ -3,9 +3,6 @@
 # TajweedParser
 Tajweed Quran Parser for Android bassed on [quran-tajweed](http://api.alquran.cloud/v1/quran/quran-tajweed)
 
-# Deprecated
-This library is deprecated in favor of [QuranX](https://github.com/vipafattal/QuranX), and no longer maintained please migrate to [TajweedProcessor](https://github.com/vipafattal/QuranX/tree/master/tajweedprocessor) of QuranX.
-
 ## Setup
 
 #### Step 1
