@@ -41,7 +41,7 @@ then use `setTajweedMetasColor(MetaColors)` to force library to use your custom 
 TajweedHelper.setTajweedMetasColor(customMetaColors)
 ```
 
-To use TajweedHepler, which is a singleton in Kotlin, in your Java you need to obtain INSTANCE:
+To use TajweedHepler, which is a singleton in Kotlin, in your Java code you need to obtain INSTANCE:
 
 ```Java 
 TajweedHelper th = TajweedHelper.INSTANCE;
